@@ -1,0 +1,13 @@
+##
+## Dockerfile required to complete the workshops
+##
+FROM debian:stretch
+
+# basic softwared
+RUN apt-get update && \
+    apt-get -qq install \
+    ruby \
+    git \
+    openssh-client \
+    python3 \
+    awscli
