@@ -1,0 +1,7 @@
+cpu: 512
+memory: 256
+
+task_definition:
+  nginx:
+    image: nginx
+    
