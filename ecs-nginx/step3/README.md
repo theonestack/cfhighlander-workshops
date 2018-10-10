@@ -8,7 +8,7 @@ Add following DSL statement to your highlander template in `workshop.cfhighlande
 
 ```ruby
   Component 'ecs@1.2.0'
-  Component 'loadbalancer@1.2.2'
+  Component 'loadbalancer@1.2.3'
 ```
 
 ### Configure ECS cluster component
@@ -37,7 +37,7 @@ to populate `ecsAMI`
 We need to add the `DnsDomain` same as the ECS component.
 
 ```ruby
-  Component template: 'loadbalancer@1.2.2', name: 'loadbalancer' do
+  Component template: 'loadbalancer@1.2.3', name: 'loadbalancer' do
     parameter name:'DnsDomain', value: 'workshop.cfhighlander.info'
   end
 ```

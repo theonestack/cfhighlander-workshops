@@ -9,7 +9,7 @@ CfhighlanderTemplate do
     parameter name:'KeyName', value:'awstoolsworkshop'
   end
 
-  Component template: 'loadbalancer@1.2.2', name: 'loadbalancer' do
+  Component template: 'loadbalancer@1.2.3', name: 'loadbalancer' do
     parameter name:'DnsDomain', value: 'workshop.cfhighlander.info'
     parameter name:'SslCertId', value:''
   end
