@@ -26,7 +26,7 @@ $ aws ec2 import-key-pair --key-name awstoolsworkshop --public-key-material file
 Add following DSL statement to your highlander template in `workshop.cfhighlander.rb`
 
 ```
-  Component 'bastion@1.2.0'
+  Component name:'bastion', template:'bastion@1.2.0'
 ```
 
 Your cfhighlander template should now include both vpc and bastion components.
@@ -38,7 +38,7 @@ Alter your component definition to include the parameter value. Also, `DnsDomain
 should be provided explicitly
 
 ```
-  Component 'bastion@1.2.0' do
+  Component name:'bastion', template:'bastion@1.2.0' do
     parameter name:'DnsDomain', value: 'workshop.cfhighlander.info'
     parameter name:'KeyName', value:'awstoolsworkshop'
   end
