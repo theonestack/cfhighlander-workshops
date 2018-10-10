@@ -11,7 +11,6 @@ CfhighlanderTemplate do
 
   Component template: 'loadbalancer@1.2.3', name: 'loadbalancer' do
     parameter name:'DnsDomain', value: 'workshop.cfhighlander.info'
-    parameter name:'SslCertId', value:''
   end
 
   Component template: 'ecs@1.2.0', name: 'ecs' do
