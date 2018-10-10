@@ -44,7 +44,7 @@ cfhighlander cfcompile
 - Add Loadbalanacer component
 - Deploy, update stack, visit the web url
 
-## Step 3
+## Step 4
 
 - Add Nginx as service on ECS component
 - Deploy, update stack, visit the web url
