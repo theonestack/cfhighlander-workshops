@@ -15,7 +15,7 @@ To start the docker container from the image with interactive prompt,
 execute below from your shell. It will mount your AWS credentials to container
 
 ```shell
-docker run -it -w /src -v $PWD:/src -v $HOME/.aws:/root/.aws theonestack/workshop-tools:light bash
+docker run -it -e AWS_REGION=ap-southeast-2 -e AWS_DEFAULT_REGION=ap-southeast-2 -w /src -v $PWD:/src -v $HOME/.aws:/root/.aws theonestack/workshop-tools:light bash
 ```
 
 You will also need latest cfhighlander gem, install it using gem command:
