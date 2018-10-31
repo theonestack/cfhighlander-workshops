@@ -33,6 +33,11 @@ memory: 256
 task_definition:
   nginx:
     image: nginx
+    ports: 
+      - 80
+targetgroup: 
+  container: nginx 
+  port: 80 
 ```
 
 ### Update workshop stack
